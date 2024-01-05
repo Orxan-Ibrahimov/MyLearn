@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "my-learn": "apps/my-learn",
+    "my-learn-e2e": "apps/my-learn-e2e"
+  }
+}
