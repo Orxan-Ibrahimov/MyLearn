@@ -1,0 +1,61 @@
+header {
+  height: 75px;
+  width: calc(100% - 300px);
+  position: fixed;
+  left: 300px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  border-top: 2px solid $light-bg;
+
+  & > .nav-brand {
+    & > .brand {
+      font-size: 1.5rem;
+    }
+  }
+
+  & > .form-search {
+    background-color: $light-bg;
+    border-radius: 0.4rem;
+    padding: 0 1rem;
+
+    & > .search-input {
+      background-color: transparent;
+      width: 300px;
+      height: 40px;
+    }
+
+    & > .search-icon {
+      cursor: pointer;
+    }
+  }
+
+  & > .controller-list {
+    display: flex;
+    & > .controller-item {
+      & > .controller-button {
+        font-size: 1.3rem;
+        margin: 0 .5rem;
+        background-color: $light-bg;
+        padding: .4rem .8rem;
+        border-radius: .4rem;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $dark-color;
+            color: $white-color;
+            transition: .4s background-color;
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    width: 100%;
+    left: 0;
+  }
+}

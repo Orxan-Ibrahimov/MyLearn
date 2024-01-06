@@ -1,0 +1,25 @@
+footer{
+    height: 75px;
+    width: calc(100% - 300px);
+    position: fixed;
+    left: 300px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $light-bg;
+
+    & > .copyright{
+        & > .copyright-link{
+            color: $main-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+      width: 100%;      
+      left: 0;
+    }
+  }
+  

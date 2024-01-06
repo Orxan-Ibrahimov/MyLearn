@@ -17,7 +17,7 @@
       align-self: flex-end;
       margin: 0 1rem 2rem 1rem;
       background-color: $danger-color;
-      color: $dark-color;
+      color: $white-color;
       padding: 0.3rem 0.6rem;
       border-radius: 0.2rem;
       font-size: 1.5rem;
@@ -51,9 +51,7 @@
         padding: 1rem 10%;
         font-family: 'Segoe UI', sans-serif;
         font-size: 1.3rem;
-
         color: $main-color;
-        // transition: 0.4s all;
 
         &:hover {
           background-color: $light-bg;
@@ -66,7 +64,6 @@
         & > .menu-text {
           display: inline-block;
           text-transform: lowercase;
-          //   transition: 0.4s all;
           margin-left: 1rem;
           color: $light-color;
         }
@@ -77,8 +74,7 @@
 
 @media only screen and (max-width: 992px) {
   .nav {
-    // width: 0px;
-    // left: -300px;
+    left: -300px;
 
     & > .nav-profile {
       & > .close {
