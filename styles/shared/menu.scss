@@ -1,12 +1,15 @@
+
 .nav {
   width: 300px;
   overflow: hidden;
   position: fixed;
   height: 100vh;
-  left: 0;
+  // left: 0;
   border-right: 2px solid $light-bg;
   z-index: 2;
   background-color: $white-color;
+  color: $dark-color;  
+  
 
   & > .nav-profile {
     display: flex;
@@ -75,15 +78,4 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .nav {
-    left: -300px;
-
-    & > .nav-profile {
-      & > .close {
-        display: inline-flex;
-      }
-    }
-  }
-}
 

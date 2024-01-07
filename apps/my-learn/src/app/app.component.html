@@ -1,4 +1,4 @@
-<div style="display: flex;">
+<div class="container" [ngClass]="{hide:hiddenMenu === true}">
     <online-education-menu (dataFormMenu)="GetDataFormMenu($event)" [data]="hiddenMenu"></online-education-menu>
 <main>
     <online-education-header (dataFormHeader)="GetDataFormHeader($event)" [data]="hiddenMenu"></online-education-header>

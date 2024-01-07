@@ -1,14 +1,14 @@
 header {
   height: 75px;
-  width: calc(100% - 300px);
   position: fixed;
-  left: 300px;
   top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
   align-items: center;
   border-top: 2px solid $light-bg;
+  background-color: $white-color;
+  color: $dark-color;  
 
   & > .nav-brand {
     & > .brand {
@@ -42,6 +42,7 @@ header {
         padding: .4rem .8rem;
         border-radius: .4rem;
         cursor: pointer;
+        color: $dark-color;
 
         &:hover{
             background-color: $dark-color;
@@ -59,10 +60,3 @@ header {
        }
     }
   }
-  
-@media only screen and (max-width: 992px) {
-  header {
-    width: 100%;
-    left: 0;
-  }
-}

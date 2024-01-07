@@ -1,3 +1,55 @@
-// h1{
-//     color: red;
-// }
+.container {
+  display: flex;
+
+  .nav {
+    left: 0;
+  }
+  main,
+  footer,
+  header {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+
+  main {
+    height: 100vh;
+    position: relative;
+  }
+}
+.hide {
+  .nav {
+    left: -300px !important;
+  }
+  main,
+  header,
+  footer {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    .nav {
+      left: -300px;
+      & > .nav-profile {
+        & > .close {
+          display: inline-flex;
+        }
+      }
+    }
+
+    footer,
+    header,
+    main {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .hide {
+    .nav {
+      left: 0 !important;
+    }
+  }
+}
