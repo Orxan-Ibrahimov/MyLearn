@@ -1,6 +1,6 @@
-<nav class="nav">
+<nav class="nav" [ngClass]="{show:data === true}">
 <div class="nav-profile">
-    <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>
+    <button type="button" class="close" (click)="HideMenu()"><i class="fa-solid fa-xmark"></i></button>
     <img src="../assets/images/avatar-g.jpg" class="profile-image" alt="avatar" />
     <h4 class="profile-user">shaik anas</h4>
     <small class="profile-role">student</small>

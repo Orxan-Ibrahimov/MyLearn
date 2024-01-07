@@ -1,8 +1,7 @@
 <div style="display: flex;">
-    <online-education-menu></online-education-menu>
-
+    <online-education-menu (dataFormMenu)="GetDataFormMenu($event)" [data]="hiddenMenu"></online-education-menu>
 <main>
-    <online-education-header></online-education-header>
+    <online-education-header (dataFormHeader)="GetDataFormHeader($event)" [data]="hiddenMenu"></online-education-header>
     <online-education-footer></online-education-footer>
 </main>
 </div>

@@ -5,6 +5,8 @@
   height: 100vh;
   left: 0;
   border-right: 2px solid $light-bg;
+  z-index: 2;
+  background-color: $white-color;
 
   & > .nav-profile {
     display: flex;
@@ -22,6 +24,7 @@
       border-radius: 0.2rem;
       font-size: 1.5rem;
       cursor: pointer;
+      z-index: 2;
     }
     & > .profile-image {
       width: 100px;
@@ -83,3 +86,4 @@
     }
   }
 }
+
