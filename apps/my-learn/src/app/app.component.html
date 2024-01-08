@@ -1,7 +1,8 @@
-<div class="container" [ngClass]="{hide:hiddenMenu === true}">
-    <online-education-menu (dataFormMenu)="GetDataFormMenu($event)" [data]="hiddenMenu"></online-education-menu>
+<div class="container" [ngClass]="{'bg-dark':isDark, 'hide' : hiddenMenu}">
+    <online-education-menu (dataFormMenu)="GetDataFromMenu($event)" [data]="hiddenMenu"></online-education-menu>
 <main>
-    <online-education-header (dataFormHeader)="GetDataFormHeader($event)" [data]="hiddenMenu"></online-education-header>
+    <online-education-header (dataFormHeader)="GetDataFromHeader($event)"
+    [data]="hiddenMenu" [colorData]="isDark"></online-education-header>
     <online-education-footer></online-education-footer>
 </main>
 </div>

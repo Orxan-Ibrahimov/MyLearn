@@ -10,7 +10,18 @@
 
     <ul class="controller-list">
         <li class="controller-item"><button type="button" (click)="HideMenu()" class="controller-button"><i class="fa-solid fa-bars"></i></button></li>
-        <li class="controller-item"><button type="button" class="controller-button"><i class="fa-solid fa-user"></i></button></li>
-        <li class="controller-item"><button type="button" class="controller-button"><i class="fa-solid fa-gear"></i></button></li>
+        <li class="controller-item"><button type="button" (click)="HideProfile()" class="controller-button"><i class="fa-solid fa-user"></i></button></li>
+        <li class="controller-item"><button type="button" (click)="MakeDark()" class="controller-button"><i class="fa-solid" [ngClass]="{'fa-gear': colorData,'fa-moon':!colorData} "></i></button></li>
     </ul>
+
+    <div class="mini-profile" [ngClass]="{'hide':isHidden}">
+        <img src="../assets/images/avatar-g.jpg" class="profile-image" alt="avatar" />
+        <h4 class="profile-user">shaik anas</h4>
+        <small class="profile-role">student</small>
+        <button type="button" class="buton buton-fluid">View Profile</button>
+        <div class="buton-group">
+            <button type="button" class="buton">Login</button>
+            <button type="button" class="buton">Register</button>
+        </div>
+    </div>
 </header>

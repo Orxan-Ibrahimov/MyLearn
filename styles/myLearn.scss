@@ -2,9 +2,7 @@
 // base styles
 @import './base/color.scss';
 @import './base/reset.scss';
-$white-color: #222;
-$light-bg : #333;
-$dark-color : #fff;
+
 //shared styles
 @import './shared/menu.scss';
 @import './shared/header.scss';
