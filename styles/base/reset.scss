@@ -34,8 +34,8 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $dark-color;
-    color: $white-color;
+    background-color: $dark-color !important;
+    color: $white-color !important;
   }
 }
 

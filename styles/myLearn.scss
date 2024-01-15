@@ -8,6 +8,9 @@
 @import './shared/header.scss';
 @import './shared/footer.scss';
 
+// pages
+@import './pages/education-option.component.scss';
+
 body{
     background-color: $light-bg;
 }

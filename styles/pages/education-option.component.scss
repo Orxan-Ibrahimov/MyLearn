@@ -1,0 +1,90 @@
+.education-container {
+  padding: 0 2rem;
+  & > .headline {
+    text-transform: capitalize;
+    color: $dark-color;
+    padding: 1rem 0;
+    border-bottom: 1px solid $dark-color;
+  }
+
+  & > .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    & > .card {
+      background-color: $white-color;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      width: 24%;
+      height: fit-content;
+      & > .card-header {
+      }
+      & > .card-body {
+        margin: 1rem 0;
+      }
+      & > .card-body-icons {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+      }
+      & > .card-footer {
+      }
+
+      & .card-title {
+        color: $dark-color;
+        text-transform: capitalize;
+        font-weight: 900;
+      }
+
+      & .card-text {
+        color: $light-color;
+        margin: 0.5rem 0;
+        line-height: 1.7;
+      }
+    
+      .buton {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-transform: capitalize;
+      }
+
+      & .card-icon{
+        background-color: $light-bg;
+        color: $dark-color;
+        display: inline-block;
+        padding: .5rem;
+        margin:.5rem;
+        border-radius: .5rem;
+
+        i{
+            transition: none;
+        }
+      }
+    }
+
+    & > .card-profile{
+        display: flex;
+        align-items: center;
+        width: 32.5%;
+
+        & .img-profile{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        & > .card-body{
+            margin: 0 1rem;
+
+            & > .card-profile-title{
+                font-weight: 900;
+            }
+
+            & > .card-profile-date{
+                font-size: small;
+                color: $light-color;
+            }
+        }
+    }
+  }
+}
