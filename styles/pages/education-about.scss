@@ -30,27 +30,43 @@
     }
   }
 }
-.mini-cards{
-    display: flex;
-    // justify-content: space-between;
+.mini-cards {
+  display: flex;
+  justify-content: space-between;
 
-    & > .mini-card{
-        display: flex;
-        align-items: center;
-        background-color: $white-color;
-        width: 25%;
-        padding: 1rem;
-        border-radius: .4rem;
-        margin: 0 1rem;
-    
-    
-        .mini-icon{
-            font-size: xx-large;
-            color: purple;
-        }
-    
-        .mini-text{
-            color: $light-color;
-        }
+  & > .mini-card {
+    display: flex;
+    align-items: center;
+    background-color: $white-color;
+    width: 25%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin: 0 1rem;
+
+    &:first-of-type {
+      margin-left: 0;
     }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .mini-icon {
+      font-size: xx-large;
+      color: purple;
+    }
+
+    .mini-text {
+      color: $light-color;
+    }
+  }
+}
+.card-review {
+  width: 30% !important;
+  padding: 0 1rem !important;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  & > .card-footer {
+    padding-bottom: 1rem;
+  }
 }

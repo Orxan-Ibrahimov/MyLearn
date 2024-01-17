@@ -40,12 +40,37 @@
   }
 }
 
-.buton-orange{
+.user-box {
+  display: flex;
+  align-items: center;
+
+  & > .avatar {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  & > .user-content {
+    margin: 0 1rem;
+    & > .title {
+      color: $dark-color;
+    }
+
+    & > .sub {
+      font-size: smaller;
+    }
+  }
+}
+
+.buton-orange {
   background-color: $orange-color;
   color: $white-color;
 }
 
-.w-100{
+.text-orange {  
+  color: $orange-color;
+}
+
+.w-100 {
   width: 100% !important;
 }
 .mx-auto {
