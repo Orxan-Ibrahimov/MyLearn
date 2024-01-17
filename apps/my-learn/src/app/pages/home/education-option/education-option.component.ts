@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: "online-education-option",
     templateUrl: "./education-option.component.html"
 })
-export class EducationOptionComponent{
+export class OnlineEducationOptionComponent{
 
 }

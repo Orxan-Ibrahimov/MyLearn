@@ -1,0 +1,74 @@
+.search-box {  
+  position: relative;
+  .search {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+  }
+
+  & > .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: .5rem;
+  }
+}
+
+.card-teacher {
+    width: 32.5% !important;
+    background-color: $white-color;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    height: fit-content;
+    margin: 1rem 0;
+  
+    & > .card-header {
+      text-align: center;
+      text-transform: capitalize;
+  
+      & > .img-profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  
+    & > .card-body {
+      text-align: center;
+      line-height: 1.7;
+  
+      & .img-course {
+        width: 100%;
+      }
+  
+      & .card-playlist {
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        background-color: $playlist-bg;
+        color: $white-color;
+        font-size: small;
+        display: inline-block;
+        padding: 0.2rem 0.8rem;
+        border-radius: 0.3rem;
+      }
+  
+      & > .card-profile-title {
+        font-weight: 900;
+      }
+  
+      & > .card-profile-date {
+        font-size: small;
+        color: $light-color;
+      }
+    }
+
+    & > .card-footer {
+        text-align: center;
+        text-transform: capitalize;
+        margin: 1rem 0;        
+      }
+  }

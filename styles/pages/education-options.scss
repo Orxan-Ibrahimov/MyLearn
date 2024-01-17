@@ -1,0 +1,57 @@
+.education-container {
+  // padding: 0 2rem;
+  & > .headline {
+    text-transform: capitalize;
+    color: $dark-color;
+    padding: 1rem 0;
+    border-bottom: 1px solid $dark-color;
+  }
+
+  & > .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    & > .card {
+      width: 24%;
+      background-color: $white-color;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      height: fit-content;
+     
+      & > .card-body {
+        margin: 1rem 0;
+      }
+      & > .card-body-icons {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      & .card-title {
+        color: $dark-color;
+        text-transform: capitalize;
+        font-weight: 900;
+      }
+
+      & .card-text {
+        color: $light-color;
+        margin: 0.5rem 0;
+        line-height: 1.7;
+      }     
+
+      & .card-icon {
+        background-color: $light-bg;
+        color: $dark-color;
+        display: inline-block;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+
+        i {
+          transition: none;
+        }
+      }
+    }
+   
+  }
+}

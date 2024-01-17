@@ -1,0 +1,65 @@
+.card-profile {
+  width: 32.5%;
+  background-color: $white-color;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  height: fit-content;
+
+  & > .card-header {
+    display: flex;
+    align-items: center;
+
+    & > .img-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  & > .card-body {
+    position: relative;
+
+    & .img-course {
+      width: 100%;
+    }
+
+    & .card-playlist {
+      position: absolute;
+      top: 4%;
+      left: 2%;
+      background-color: $playlist-bg;
+      color: $white-color;
+      font-size: small;
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.3rem;
+    }
+
+    & > .card-profile-title {
+      font-weight: 900;
+    }
+
+    & > .card-profile-date {
+      font-size: small;
+      color: $light-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .card{
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .card{
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .card{
+    width: 375px;
+  }
+}

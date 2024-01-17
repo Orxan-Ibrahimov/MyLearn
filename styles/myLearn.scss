@@ -9,7 +9,9 @@
 @import './shared/footer.scss';
 
 // pages
-@import './pages/education-option.component.scss';
+@import './pages/education-options.scss';
+@import './pages/education-course-item.scss';
+@import './pages/education-teachers.scss';
 
 body{
     background-color: $light-bg;
