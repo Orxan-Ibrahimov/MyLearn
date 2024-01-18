@@ -1,0 +1,27 @@
+#contact {
+  width: 40% !important; 
+
+}
+
+.contact-form {
+    background-color: $white-color;
+    padding: 1rem;
+    margin: 3rem 0;
+
+    .contact-input-data {
+      .input-data {
+        width: 100%;
+        background-color: $light-bg;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .buton {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0.5rem 0;
+    }
+  }

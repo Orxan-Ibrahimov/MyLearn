@@ -12,6 +12,7 @@ import { OnlineEducationTeachersComponent } from './pages/teachers/online-educat
 import { OnlineEducationTeacherItemComponent } from './pages/teachers/teacher-item/online-education-teacher-item.component';
 import { OnlineEducationAboutComponent } from './pages/about/online-education-about.component';
 import { OnlineEducationStudentReviewsComponent } from './pages/about/student-reviews/online-education-student-reviews.component';
+import { OnlineEducationContactComponent } from './pages/contact/online-education-contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OnlineEducationStudentReviewsComponent } from './pages/about/student-re
     OnlineEducationTeachersComponent,
     OnlineEducationTeacherItemComponent,
     OnlineEducationAboutComponent,
-    OnlineEducationStudentReviewsComponent
+    OnlineEducationStudentReviewsComponent,
+    OnlineEducationContactComponent
   ],
   imports: [BrowserModule],
   providers: [],

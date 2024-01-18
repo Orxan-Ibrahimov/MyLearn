@@ -1,5 +1,6 @@
 .about-container {
   display: flex;
+  justify-content: space-between;
 
   & > .about-left {
     display: inline-block;
@@ -53,7 +54,7 @@
 
     .mini-icon {
       font-size: xx-large;
-      color: purple;
+      color: $main-color;
     }
 
     .mini-text {
