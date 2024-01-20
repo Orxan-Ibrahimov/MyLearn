@@ -4,6 +4,7 @@
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
+  margin: 1rem auto;
 
   & > .card-header {
     display: flex;
@@ -46,20 +47,20 @@
   }
 }
 
-@media only screen and (min-width: 768px){
-  .card{
+@media only screen and (min-width: 768px) {
+  .card {
     width: 300px;
   }
 }
 
-@media only screen and (min-width: 1200px){
-  .card{
+@media only screen and (min-width: 1200px) {
+  .card {
     width: 350px;
   }
 }
 
-@media only screen and (min-width: 1400px){
-  .card{
+@media only screen and (min-width: 1400px) {
+  .card {
     width: 375px;
   }
 }

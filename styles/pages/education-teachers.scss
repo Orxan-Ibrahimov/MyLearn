@@ -23,7 +23,7 @@
     padding: 1rem 2rem;
     border-radius: 0.4rem;
     height: fit-content;
-    margin: 1rem 0;
+    margin: 1rem auto;
   
     & > .card-header {
       text-align: center;
@@ -71,4 +71,4 @@
         text-transform: capitalize;
         margin: 1rem 0;        
       }
-  }
+}

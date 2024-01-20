@@ -1,5 +1,4 @@
 .education-container {
-  // padding: 0 2rem;
   & > .headline {
     text-transform: capitalize;
     color: $dark-color;
@@ -18,7 +17,11 @@
       padding: 1rem;
       border-radius: 0.4rem;
       height: fit-content;
-     
+      margin: 0 auto;
+      &:first-of-type {
+        margin-left: 0;
+      }
+
       & > .card-body {
         margin: 1rem 0;
       }
@@ -26,7 +29,7 @@
         display: flex;
         flex-wrap: wrap;
       }
-      
+
       & .card-title {
         color: $dark-color;
         text-transform: capitalize;
@@ -37,7 +40,7 @@
         color: $light-color;
         margin: 0.5rem 0;
         line-height: 1.7;
-      }     
+      }
 
       & .card-icon {
         background-color: $light-bg;
@@ -52,6 +55,5 @@
         }
       }
     }
-   
   }
 }

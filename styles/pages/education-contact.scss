@@ -1,6 +1,5 @@
 #contact {
   width: 40% !important; 
-
 }
 
 .contact-form {
@@ -24,4 +23,22 @@
       transform: translateX(-50%);
       margin: 0.5rem 0;
     }
+}
+
+.card-address{
+  background-color: $white-color;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+  display: inline-block;
+  margin: 2rem .5rem;
+
+  .address-icon{
+    color: $main-color;
+    font-size: x-large;
   }
+
+  .address-phone{
+    color: $light-color;
+  }
+}
