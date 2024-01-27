@@ -1,10 +1,10 @@
 import { Component } from "@angular/core";
 
 @Component({
-selector : "online-education-course",
+selector : "online-education-courses",
 templateUrl: "./online-education-courses.component.html"
 })
-export class OnlineEducationCourseComponent{
+export class OnlineEducationCoursesComponent{
     courses:any[] = [
         {name : "HTML", avatarImageUrl:"../../../assets/images/avatar-g.jpg", imageUrl:"../../../assets/images/course-html.jpeg", playlistItemCount: 10},
         {name : "CSS", avatarImageUrl:"../../../assets/images/avatar-g2.jpg", imageUrl:"../../../assets/images/course-css.jpg", playlistItemCount: 15},

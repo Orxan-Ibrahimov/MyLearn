@@ -6,7 +6,6 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { OnlineEducationOptionComponent } from './pages/home/education-option/education-option.component';
-import { OnlineEducationCourseComponent } from './pages/courses/courses/online-education-courses.component';
 import { OnlineEducationCourseItemComponent } from './pages/courses/course-item/online-education-course-item';
 import { OnlineEducationTeachersComponent } from './pages/teachers/online-education-teachers.component';
 import { OnlineEducationTeacherItemComponent } from './pages/teachers/teacher-item/online-education-teacher-item.component';
@@ -14,6 +13,17 @@ import { OnlineEducationAboutComponent } from './pages/about/online-education-ab
 import { OnlineEducationStudentReviewsComponent } from './pages/about/student-reviews/online-education-student-reviews.component';
 import { OnlineEducationContactComponent } from './pages/contact/online-education-contact.component';
 import { OnlineEducationContactAddressComponent } from './pages/contact/address/online-education-contact-address.component';
+import { Route, RouterModule } from '@angular/router';
+import { OnlineEducationCoursesComponent } from './pages/courses/courses/online-education-courses.component';
+import { OnlineEducationHomeComponent } from './pages/home/online-education-home.component';
+
+const Routes: Route[] = [
+  {path: '', component: OnlineEducationHomeComponent },
+  {path: 'about', component: OnlineEducationAboutComponent },
+  {path: 'courses', component: OnlineEducationCoursesComponent },  
+  {path: 'teachers', component: OnlineEducationTeachersComponent },  
+  {path: 'contact', component: OnlineEducationContactComponent }
+]
 
 @NgModule({
   declarations: [
@@ -21,8 +31,9 @@ import { OnlineEducationContactAddressComponent } from './pages/contact/address/
     MenuComponent,
     HeaderComponent,
     FooterComponent,
+    OnlineEducationHomeComponent,
     OnlineEducationOptionComponent,
-    OnlineEducationCourseComponent,
+    OnlineEducationCoursesComponent,
     OnlineEducationCourseItemComponent,
     OnlineEducationTeachersComponent,
     OnlineEducationTeacherItemComponent,
@@ -31,7 +42,10 @@ import { OnlineEducationContactAddressComponent } from './pages/contact/address/
     OnlineEducationContactComponent,
     OnlineEducationContactAddressComponent
   ],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(Routes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
