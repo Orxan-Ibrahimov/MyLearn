@@ -18,6 +18,7 @@ import { OnlineEducationCoursesComponent } from './pages/courses/courses/online-
 import { OnlineEducationHomeComponent } from './pages/home/online-education-home.component';
 import { OnlineEducationLoginComponent } from './pages/registration/login/online-education-login.component';
 import { OnlineEducationRegisterComponent } from './pages/registration/register/online-education-register.component';
+import { OnlineEducationProfileComponent } from './pages/registration/profile/online-education-profile.component';
 
 const Routes: Route[] = [
   {path: '', component: OnlineEducationHomeComponent },
@@ -26,7 +27,8 @@ const Routes: Route[] = [
   {path: 'teachers', component: OnlineEducationTeachersComponent },  
   {path: 'contact', component: OnlineEducationContactComponent },
   {path: 'login', component: OnlineEducationLoginComponent },
-  {path: 'register', component: OnlineEducationRegisterComponent }
+  {path: 'register', component: OnlineEducationRegisterComponent },
+  {path: 'profile', component: OnlineEducationProfileComponent }
 ]
 
 @NgModule({
