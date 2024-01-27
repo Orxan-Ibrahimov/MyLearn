@@ -1,0 +1,20 @@
+.education-registration{
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   & > .login-box{
+    width: 40%;
+    background-color: $white-color;
+    margin: 1rem 0;
+
+    .contact-form{
+        margin: 0;
+    }
+    
+    .buton{
+        width: 100%;
+    }
+   }
+}

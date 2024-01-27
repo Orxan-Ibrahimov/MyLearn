@@ -16,13 +16,17 @@ import { OnlineEducationContactAddressComponent } from './pages/contact/address/
 import { Route, RouterModule } from '@angular/router';
 import { OnlineEducationCoursesComponent } from './pages/courses/courses/online-education-courses.component';
 import { OnlineEducationHomeComponent } from './pages/home/online-education-home.component';
+import { OnlineEducationLoginComponent } from './pages/registration/login/online-education-login.component';
+import { OnlineEducationRegisterComponent } from './pages/registration/register/online-education-register.component';
 
 const Routes: Route[] = [
   {path: '', component: OnlineEducationHomeComponent },
   {path: 'about', component: OnlineEducationAboutComponent },
   {path: 'courses', component: OnlineEducationCoursesComponent },  
   {path: 'teachers', component: OnlineEducationTeachersComponent },  
-  {path: 'contact', component: OnlineEducationContactComponent }
+  {path: 'contact', component: OnlineEducationContactComponent },
+  {path: 'login', component: OnlineEducationLoginComponent },
+  {path: 'register', component: OnlineEducationRegisterComponent }
 ]
 
 @NgModule({
@@ -40,7 +44,9 @@ const Routes: Route[] = [
     OnlineEducationAboutComponent,
     OnlineEducationStudentReviewsComponent,
     OnlineEducationContactComponent,
-    OnlineEducationContactAddressComponent
+    OnlineEducationContactAddressComponent,
+    OnlineEducationLoginComponent,
+    OnlineEducationRegisterComponent
   ],
   imports: [
     BrowserModule,
