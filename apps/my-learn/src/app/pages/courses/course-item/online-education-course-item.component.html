@@ -1,0 +1,28 @@
+<div class="card card-profile my-half">
+    <div class="card-header">
+      <img
+        [src]="courseData.avatarImageUrl"
+        class="img-profile"
+        alt="avatar"
+      />
+      <div class="mx-1">
+        <p class="card-profile-title">john doe</p>
+        <small class="card-profile-date">21-10-2024</small>
+      </div>
+    </div>
+    <div class="card-body my-1">
+      <div class="arrange-center">
+        <img
+          [src]="courseData.imageUrl"
+          class="img-course"
+          alt="course"
+        />
+        <span class="card-playlist">{{courseData.playlistItemCount}} videos</span>
+      </div>
+      <p class="fw-bold my-half">complete {{ courseData.name }} tutorial</p>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="buton">View Playlist</button>
+    </div>
+  </div>
+  
