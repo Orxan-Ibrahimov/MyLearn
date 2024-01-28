@@ -52,7 +52,7 @@ const Routes: Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(Routes),
+    RouterModule.forRoot(Routes)    
   ],
   providers: [],
   bootstrap: [AppComponent],
