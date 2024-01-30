@@ -19,6 +19,7 @@ import { OnlineEducationRegisterComponent } from './pages/registration/register/
 import { OnlineEducationCoursesComponent } from './pages/courses/online-education-courses.component';
 import { OnlineEducationCourseItemComponent } from './pages/courses/course-item/online-education-course-item.component';
 import { OnlineEducationProfileComponent } from './pages/registration/profile/online-education-profile.component';
+import { OnlineEducationPlaylistDetailComponent } from './pages/courses/course-playlist-detail/online-education-playlist-detail.component';
 
 const Routes: Route[] = [
   { path: '', component: OnlineEducationHomeComponent },
@@ -29,6 +30,7 @@ const Routes: Route[] = [
   { path: 'login', component: OnlineEducationLoginComponent },
   { path: 'register', component: OnlineEducationRegisterComponent },
   { path: 'profile', component: OnlineEducationProfileComponent },
+  { path: 'playlist', component: OnlineEducationPlaylistDetailComponent },
 ];
 
 @NgModule({
@@ -50,6 +52,7 @@ const Routes: Route[] = [
     OnlineEducationCoursesComponent,
     OnlineEducationCourseItemComponent,
     OnlineEducationProfileComponent,
+    OnlineEducationPlaylistDetailComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(Routes)],
   providers: [],
