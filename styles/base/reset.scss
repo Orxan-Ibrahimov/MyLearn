@@ -8,6 +8,7 @@
   text-decoration: none;
   list-style: none;
   transition: 0.4s all;
+  transition: none;
 }
 
 ::selection {
@@ -42,6 +43,29 @@
   }
 }
 
+.education-badge {
+  background-color: $light-bg;
+  color: $light-color;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.2rem;
+  margin: .7rem 0;
+
+  & > .badge-icon {
+    color: $dark-color;
+    font-size: large;
+    margin-right: .4rem;
+    font-weight: bolder;    
+  }
+  &:hover {
+    background-color: $dark-color;
+    color: $white-color;
+
+    & > .badge-icon{
+      color: $white-color;
+    }
+  }
+}
 .user-box {
   display: flex;
   align-items: center;
@@ -68,11 +92,11 @@
   color: $white-color;
 }
 
-.text-orange {  
+.text-orange {
   color: $orange-color;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 

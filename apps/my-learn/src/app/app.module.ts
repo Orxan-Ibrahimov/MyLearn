@@ -20,6 +20,8 @@ import { OnlineEducationCoursesComponent } from './pages/courses/online-educatio
 import { OnlineEducationCourseItemComponent } from './pages/courses/course-item/online-education-course-item.component';
 import { OnlineEducationProfileComponent } from './pages/registration/profile/online-education-profile.component';
 import { OnlineEducationPlaylistDetailComponent } from './pages/courses/course-playlist-detail/online-education-playlist-detail.component';
+import { CoursePlaylistVideosComponent } from './pages/courses/course-playlist-videos/course-playlist-videos.component';
+import { CoursePlaylistVideoItemComponent } from './pages/courses/course-playlist-videos/course-playlist-video-item/course-playlist-video-item.component';
 
 const Routes: Route[] = [
   { path: '', component: OnlineEducationHomeComponent },
@@ -52,7 +54,9 @@ const Routes: Route[] = [
     OnlineEducationCoursesComponent,
     OnlineEducationCourseItemComponent,
     OnlineEducationProfileComponent,
-    OnlineEducationPlaylistDetailComponent
+    OnlineEducationPlaylistDetailComponent,
+    CoursePlaylistVideosComponent,
+    CoursePlaylistVideoItemComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(Routes)],
   providers: [],

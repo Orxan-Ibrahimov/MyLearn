@@ -8,7 +8,7 @@
 
   & > .cards {
     display: flex;
-    // justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin: 2rem 0;
     & > .card {
@@ -18,9 +18,7 @@
       border-radius: 0.4rem;
       height: fit-content;
       margin: 0 auto;
-      &:first-of-type {
-        margin-left: 0;
-      }
+      
 
       & > .card-body {
         margin: 1rem 0;

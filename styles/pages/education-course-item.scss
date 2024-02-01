@@ -4,7 +4,6 @@
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
-  margin: 1rem auto;
 
   & > .card-header {
     display: flex;
@@ -51,16 +50,26 @@
   .card {
     width: 300px;
   }
+  .card-profile {
+    width: 250px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .card {
     width: 350px;
   }
+  .card-profile {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .card {
     width: 375px;
+  }
+
+  .card-profile {
+    width: 350px;
   }
 }
