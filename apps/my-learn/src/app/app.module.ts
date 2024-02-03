@@ -22,6 +22,7 @@ import { OnlineEducationProfileComponent } from './pages/registration/profile/on
 import { OnlineEducationPlaylistDetailComponent } from './pages/courses/course-playlist-detail/online-education-playlist-detail.component';
 import { CoursePlaylistVideosComponent } from './pages/courses/course-playlist-videos/course-playlist-videos.component';
 import { CoursePlaylistVideoItemComponent } from './pages/courses/course-playlist-videos/course-playlist-video-item/course-playlist-video-item.component';
+import { OnlineEducationVideoDetailComponent } from './pages/courses/course-playlist-videos/online-education-video-detail/online-education-video-detail.component';
 
 const Routes: Route[] = [
   { path: '', component: OnlineEducationHomeComponent },
@@ -33,6 +34,7 @@ const Routes: Route[] = [
   { path: 'register', component: OnlineEducationRegisterComponent },
   { path: 'profile', component: OnlineEducationProfileComponent },
   { path: 'playlist', component: OnlineEducationPlaylistDetailComponent },
+  { path: 'detail', component: OnlineEducationVideoDetailComponent },
 ];
 
 @NgModule({
@@ -56,7 +58,8 @@ const Routes: Route[] = [
     OnlineEducationProfileComponent,
     OnlineEducationPlaylistDetailComponent,
     CoursePlaylistVideosComponent,
-    CoursePlaylistVideoItemComponent
+    CoursePlaylistVideoItemComponent,
+    OnlineEducationVideoDetailComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(Routes)],
   providers: [],

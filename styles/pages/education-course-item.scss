@@ -4,6 +4,8 @@
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
+  display:inline-block;
+  color: $dark-color;
 
   & > .card-header {
     display: flex;
