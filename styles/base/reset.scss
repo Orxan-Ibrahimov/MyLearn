@@ -25,6 +25,10 @@
   background-color: $main-color;
 }
 
+::placeholder{
+  color: $light-color;
+}
+
 .buton {
   background-color: $main-color;
   color: $white-color;

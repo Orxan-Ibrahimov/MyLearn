@@ -95,6 +95,16 @@
   }
 }
 
+.comment-box{
+  background-color: $light-bg;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: .4rem;
+  border: 1px solid $light-color;
+
+}
+
 @media only screen and (min-width: 768px) {
   .card {
     width: 300px;
