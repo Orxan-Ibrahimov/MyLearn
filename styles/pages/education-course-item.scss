@@ -4,7 +4,7 @@
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
-  display:inline-block;
+  display: inline-block;
   color: $dark-color;
 
   & > .card-header {
@@ -44,6 +44,53 @@
     & > .card-profile-date {
       font-size: small;
       color: $light-color;
+    }
+  }
+}
+
+.education-video-bg {
+  width: 100%;
+  background-color: $white-color;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  height: fit-content;
+  display: inline-block;
+  color: $dark-color;
+
+  & > .education-video-details {
+    & > .card-text {
+      color: $dark-color;
+    }
+
+    & > .sub-details {
+      margin: 1rem 0;
+      font-size: small;
+      color: $light-color;
+
+      & > .video-icon {
+        color: $main-color;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+
+  & > .card-profile {
+    border-top: 1px solid $light-color;
+    & > .card-header {
+      & > .arrange-justify {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+
+        & > .like-buton{
+          background-color: $light-bg;
+          color: $dark-color;
+          padding: .5rem 1rem;
+          transition: none;
+        }
+      }
     }
   }
 }
