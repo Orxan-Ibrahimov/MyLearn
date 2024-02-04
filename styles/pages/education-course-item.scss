@@ -17,23 +17,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-    }
-
-    & > .img-video {
-      width: 100%;
-    }
-
-    & > .play-icon {
-      content: '';
-      position: absolute;
-      display: none;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: $white-color;
-      z-index: 1;
-      font-size: 3rem;
-    }
+    }   
   }
 
   & > .card-body {
@@ -88,16 +72,39 @@
       font-size: small;
       color: $light-color;
     }
-  }
+  } 
+}
 
-  &:hover {
+.education-flex {
+  & .card-video {
     & > .card-header {
-      background-color: black;
       & > .img-video {
-        opacity: 0.8;
+        width: 100%;
       }
+
       & > .play-icon {
-        display: block;
+        content: '';
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white-color;
+        z-index: 1;
+        font-size: 3rem;
+      }
+
+    }
+
+    &:hover {
+      & > .card-header {
+        background-color: black;
+        & > .img-video {
+          opacity: 0.7;
+        }
+        & > .play-icon {
+          display: block;
+        }
       }
     }
   }
