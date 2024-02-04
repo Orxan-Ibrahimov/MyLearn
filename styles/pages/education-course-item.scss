@@ -25,6 +25,32 @@
       width: 100%;
     }
 
+    & > .comment-box {
+      background-color: $light-bg;
+      padding: .5rem;
+      margin: 1.5rem 0;
+      border-radius: .4rem;
+      position: relative;
+      border: none;
+
+      & > .comment{
+        padding: .5rem 0;
+        overflow-x: scroll;
+      }
+
+      &::before{
+        content: '';
+        position: absolute;
+        left: 25px;
+        top: 0;
+        // width: 0px;
+        // height: 0px;
+        border-style: solid;
+        border-width: 0 10px 15px 10px;
+        border-color: transparent transparent $light-bg transparent;
+        transform: rotate(0deg) translate(-50%,-100%);
+      }
+    }
     & .card-playlist {
       position: absolute;
       top: 4%;
@@ -84,10 +110,10 @@
         align-items: center;
         margin: 0 1rem;
 
-        & > .like-buton{
+        & > .like-buton {
           background-color: $light-bg;
           color: $dark-color;
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
           transition: none;
         }
       }
@@ -95,14 +121,13 @@
   }
 }
 
-.comment-box{
+.comment-box {
   background-color: $light-bg;
   width: 100%;
   margin: 1rem 0;
   padding: 1rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   border: 1px solid $light-color;
-
 }
 
 @media only screen and (min-width: 768px) {
