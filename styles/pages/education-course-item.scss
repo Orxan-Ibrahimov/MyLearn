@@ -6,15 +6,33 @@
   height: fit-content;
   display: inline-block;
   color: $dark-color;
+  position: relative;
 
   & > .card-header {
     display: flex;
     align-items: center;
+    position: relative;
 
     & > .img-profile {
       width: 50px;
       height: 50px;
       border-radius: 50%;
+    }
+
+    & > .img-video {
+      width: 100%;
+    }
+
+    & > .play-icon {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white-color;
+      z-index: 1;
+      font-size: 3rem;
     }
   }
 
@@ -27,30 +45,29 @@
 
     & > .comment-box {
       background-color: $light-bg;
-      padding: .5rem;
+      padding: 0.5rem;
       margin: 1.5rem 0;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       position: relative;
       border: none;
 
-      & > .comment{
-        padding: .5rem 0;
+      & > .comment {
+        padding: 0.5rem 0;
         overflow-x: scroll;
       }
 
-      &::before{
+      &::before {
         content: '';
         position: absolute;
         left: 25px;
         top: 0;
-        // width: 0px;
-        // height: 0px;
         border-style: solid;
         border-width: 0 10px 15px 10px;
         border-color: transparent transparent $light-bg transparent;
-        transform: rotate(0deg) translate(-50%,-100%);
+        transform: rotate(0deg) translate(-50%, -100%);
       }
     }
+
     & .card-playlist {
       position: absolute;
       top: 4%;
@@ -70,6 +87,18 @@
     & > .card-profile-date {
       font-size: small;
       color: $light-color;
+    }
+  }
+
+  &:hover {
+    & > .card-header {
+      background-color: black;
+      & > .img-video {
+        opacity: 0.8;
+      }
+      & > .play-icon {
+        display: block;
+      }
     }
   }
 }
