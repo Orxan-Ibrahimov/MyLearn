@@ -3,15 +3,15 @@
 }
 
 .contact-form {
-    background-color: $white-color;
+    background-color: var(--white-color);
     padding: 1rem;
     margin: 3rem 0;
 
     .contact-input-data {
-      color: $light-color;
+      color: var(--light-color);
       .input-data {
         width: 100%;
-        background-color: $light-bg;
+        background-color: var(--light-bg);
         padding: 1rem;
         border-radius: 0.4rem;
         margin: 0.5rem 0;
@@ -27,7 +27,7 @@
 }
 
 .card-address{
-  background-color: $white-color;
+  background-color: var(--white-color);
   width: 30%;
   text-align: center;
   padding: 1rem;
@@ -35,11 +35,11 @@
   margin: 2rem .5rem;
 
   .address-icon{
-    color: $main-color;
+    color: var(--main-color);
     font-size: x-large;
   }
 
   .address-phone{
-    color: $light-color;
+    color: var(--light-color);
   }
 }

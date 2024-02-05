@@ -5,10 +5,10 @@
   position: fixed;
   height: 100vh;
   // left: 0;
-  border-right: 2px solid $light-bg;
+  border-right: 2px solid var(--light-bg);
   z-index: 2;
-  background-color: $white-color;
-  color: $dark-color;  
+  background-color: var(--white-color);
+  color: var(--dark-color);  
   
 
   & > .nav-profile{
@@ -21,8 +21,8 @@
       display: none;
       align-self: flex-end;
       margin: 0 1rem 2rem 1rem;
-      background-color: $danger-color;
-      color: $white-color;
+      background-color: var(--danger-color);
+      color: var(--white-color);
       padding: 0.3rem 0.6rem;
       border-radius: 0.2rem;
       font-size: 1.5rem;
@@ -39,7 +39,7 @@
       margin-top: 0.3rem 0;
     }
     & > .profile-role {
-      color: $light-color;
+      color: var(--light-color);
       font-weight: 500;
     }
 
@@ -57,10 +57,10 @@
         padding: 1rem 10%;
         font-family: 'Segoe UI', sans-serif;
         font-size: 1.3rem;
-        color: $main-color;
+        color: var(--main-color);
 
         &:hover {
-          background-color: $light-bg;
+          background-color: var(--light-bg);
 
           & > .menu-text {
             transform: translateX(0.5rem);
@@ -71,7 +71,7 @@
           display: inline-block;
           text-transform: lowercase;
           margin-left: 1rem;
-          color: $light-color;
+          color: var(--light-color);
         }
       }
     }

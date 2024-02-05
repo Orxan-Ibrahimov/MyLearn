@@ -5,13 +5,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid $light-bg;
-    background-color: $white-color;
-    color: $dark-color;  
+    border-top: 2px solid var(--light-bg);
+    background-color: var(--white-color);
+    color: var(--dark-color);  
 
     & > .copyright{
         & > .copyright-link{
-            color: $main-color;
+            color: var(--main-color);
         }
     }
 }

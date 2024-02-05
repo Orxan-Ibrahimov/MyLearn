@@ -1,5 +1,5 @@
 .playlist-container {
-  background-color: $white-color;
+  background-color: var(--white-color);
   padding: 1rem;
   margin: 1rem 0;
   
@@ -22,8 +22,8 @@
         position: absolute;
         left: 1%;
         top: 3%;
-        background-color: $playlist-bg;
-        color: $white-color;
+        background-color: var(--playlist-bg);
+        color: var(--white-color);
         padding: 0.2rem 0.8rem;
         border-radius: 0.5rem;
       }
@@ -43,12 +43,12 @@
         }
 
         & .card-title {
-          color: $dark-color;
+          color: var(--dark-color);
           margin: 1rem 0;
         }
 
         & .card-text {
-          color: $light-color;
+          color: var(--light-color);
           line-height: 2;
         }      
       }

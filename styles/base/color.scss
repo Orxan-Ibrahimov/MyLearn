@@ -1,9 +1,17 @@
-$main-color: #8e44ad;
-$danger-color: #e74c3c;
-$orange-color: #f39c12;
-$dark-color: #2c3e50;
-$white-color: #fff;
-$light-color: #888;
-$light-bg: #eee;
-$border-color: rgba(0,0,0,.2);
-$playlist-bg: rgba($color: #000000, $alpha: .5);
+:root {
+  --main-color: #8e44ad;
+  --danger-color: #e74c3c;
+  --orange-color: #f39c12;
+  --dark-color: #2c3e50;
+  --white-color: #fff;
+  --light-color: #888;
+  --light-bg: #eee;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --playlist-bg: rgba($color: #000000, $alpha: 0.5);
+}
+
+[data-theme='dark'] {
+  --light-bg: #2c2e2c;
+  --white-color: #202320;
+  --dark-color: #fff;
+}

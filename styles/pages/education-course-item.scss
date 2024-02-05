@@ -1,11 +1,11 @@
 .card-profile {
   width: 32.5%;
-  background-color: $white-color;
+  background-color: var(--white-color);
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
   display: inline-block;
-  color: $dark-color;
+  color: var(--dark-color);
   position: relative;
 
   & > .card-header {
@@ -28,7 +28,7 @@
     }
 
     & > .comment-box {
-      background-color: $light-bg;
+      background-color: var(--light-bg);
       padding: 0.5rem;
       margin: 1.5rem 0;
       border-radius: 0.4rem;
@@ -47,7 +47,7 @@
         top: 0;
         border-style: solid;
         border-width: 0 10px 15px 10px;
-        border-color: transparent transparent $light-bg transparent;
+        border-color: transparent transparent var(--light-bg) transparent;
         transform: rotate(0deg) translate(-50%, -100%);
       }
     }
@@ -56,8 +56,8 @@
       position: absolute;
       top: 4%;
       left: 2%;
-      background-color: $playlist-bg;
-      color: $white-color;
+      background-color: var(--playlist-bg);
+      color: var(--white-color);
       font-size: small;
       display: inline-block;
       padding: 0.2rem 0.8rem;
@@ -70,7 +70,7 @@
 
     & > .card-profile-date {
       font-size: small;
-      color: $light-color;
+      color: var(--light-color);
     }
   } 
 }
@@ -89,7 +89,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $white-color;
+        color: var(--white-color);
         z-index: 1;
         font-size: 3rem;
       }
@@ -112,32 +112,32 @@
 
 .education-video-bg {
   width: 100%;
-  background-color: $white-color;
+  background-color: var(--white-color);
   padding: 1rem;
   border-radius: 0.4rem;
   height: fit-content;
   display: inline-block;
-  color: $dark-color;
+  color: var(--dark-color);
 
   & > .education-video-details {
     & > .card-text {
-      color: $dark-color;
+      color: var(--dark-color);
     }
 
     & > .sub-details {
       margin: 1rem 0;
       font-size: small;
-      color: $light-color;
+      color: var(--light-color);
 
       & > .video-icon {
-        color: $main-color;
+        color: var(--main-color);
         margin-right: 0.3rem;
       }
     }
   }
 
   & > .card-profile {
-    border-top: 1px solid $light-color;
+    border-top: 1px solid var(--light-color);
     & > .card-header {
       & > .arrange-justify {
         width: 100%;
@@ -147,8 +147,8 @@
         margin: 0 1rem;
 
         & > .like-buton {
-          background-color: $light-bg;
-          color: $dark-color;
+          background-color: var(--light-bg);
+          color: var(--dark-color);
           padding: 0.5rem 1rem;
           transition: none;
         }
@@ -158,12 +158,12 @@
 }
 
 .comment-box {
-  background-color: $light-bg;
+  background-color: var(--light-bg);
   width: 100%;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 0.4rem;
-  border: 1px solid $light-color;
+  border: 1px solid var(--light-color);
 }
 
 @media only screen and (min-width: 768px) {

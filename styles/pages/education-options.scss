@@ -1,19 +1,19 @@
 .education-container {
-  & > .headline {
+   > .headline {
     text-transform: capitalize;
-    color: $dark-color;
+    color: var(--dark-color);
     padding: 1rem 0;
-    border-bottom: 1px solid $dark-color;
+    border-bottom: 1px solid var(--dark-color);
   }
 
-  & > .cards {
+   > .cards {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 2rem 0;
     & > .card {
       width: 24%;
-      background-color: $white-color;
+      background-color: var(--white-color);
       padding: 1rem;
       border-radius: 0.4rem;
       height: fit-content;
@@ -29,20 +29,20 @@
       }
 
       & .card-title {
-        color: $dark-color;
+        color: var(--dark-color);
         text-transform: capitalize;
         font-weight: 900;
       }
 
       & .card-text {
-        color: $light-color;
+        color: var(--light-color);
         margin: 0.5rem 0;
         line-height: 1.7;
       }
 
       & .card-icon {
-        background-color: $light-bg;
-        color: $dark-color;
+        background-color: var(--light-bg);
+        color: var(--dark-color);
         display: inline-block;
         padding: 0.5rem;
         margin: 0.5rem;

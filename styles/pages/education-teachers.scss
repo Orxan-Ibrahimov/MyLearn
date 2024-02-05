@@ -19,7 +19,7 @@
 
 .card-teacher {
     width: 32.5% !important;
-    background-color: $white-color;
+    background-color: var(--white-color);
     padding: 1rem 2rem;
     border-radius: 0.4rem;
     height: fit-content;
@@ -48,8 +48,8 @@
         position: absolute;
         top: 4%;
         left: 2%;
-        background-color: $playlist-bg;
-        color: $white-color;
+        background-color: var(--playlist-bg);
+        color: var(--white-color);
         font-size: small;
         display: inline-block;
         padding: 0.2rem 0.8rem;
@@ -62,7 +62,7 @@
   
       & > .card-profile-date {
         font-size: small;
-        color: $light-color;
+        color: var(--light-color);
       }
     }
 

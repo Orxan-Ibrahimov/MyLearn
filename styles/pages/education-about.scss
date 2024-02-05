@@ -17,13 +17,13 @@
     float: right;
 
     & > .about-title {
-      color: $dark-color;
+      color: var(--dark-color);
     }
 
     & > .about-text {
       line-height: 1.9;
       margin: 1rem 0;
-      color: $light-color;
+      color: var(--light-color);
     }
 
     & > .buton {
@@ -38,7 +38,7 @@
   & > .mini-card {
     display: flex;
     align-items: center;
-    background-color: $white-color;
+    background-color: var(--white-color);
     width: 25%;
     padding: 1rem;
     border-radius: 0.4rem;
@@ -54,11 +54,11 @@
 
     .mini-icon {
       font-size: xx-large;
-      color: $main-color;
+      color: var(--main-color);
     }
 
     .mini-text {
-      color: $light-color;
+      color: var(--light-color);
     }
   }
 }

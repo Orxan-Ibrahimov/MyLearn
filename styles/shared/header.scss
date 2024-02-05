@@ -6,9 +6,9 @@ header {
   justify-content: space-between;
   padding: 0 2rem;
   align-items: center;
-  border-top: 2px solid $light-bg;
-  background-color: $white-color;
-  color: $dark-color;  
+  border-top: 2px solid var(--light-bg);
+  background-color: var(--white-color);
+  color: var(--dark-color);  
 
   & > .nav-brand {
     & > .brand {
@@ -17,7 +17,7 @@ header {
   }
 
   & > .form-search {
-    background-color: $light-bg;
+    background-color: var(--light-bg);
     border-radius: 0.4rem;
     padding: 0 1rem;
 
@@ -38,15 +38,15 @@ header {
       & > .controller-button {
         font-size: 1.3rem;
         margin: 0 .5rem;
-        background-color: $light-bg;
+        background-color: var(--light-bg);
         padding: .4rem .8rem;
         border-radius: .4rem;
         cursor: pointer;
-        color: $dark-color;
+        color: var(--dark-color);
 
         &:hover{
-            background-color: $dark-color;
-            color: $white-color;
+            background-color: var(--dark-color);
+            color: var(--white-color);
             transition: .4s background-color;
           }
       }
@@ -57,7 +57,7 @@ header {
     position: absolute;
     width: 300px;
     height: 300px;
-    background-color: $white-color;
+    background-color: var(--white-color);
     top: 100%;
     right: 0;
     margin: 1rem 2rem;
@@ -75,7 +75,7 @@ header {
     }
     & > .profile-user{}
     & > .profile-role{
-      color: $light-color;
+      color: var(--light-color);
     }
     & .buton{
       width: 125px;
@@ -87,11 +87,11 @@ header {
       display: flex;
 
       & .buton{
-       background: $orange-color;
+       background: var(--orange-color);
 
        &:hover {
-        background-color: $dark-color;
-        color: $white-color;
+        background-color: var(--dark-color);
+        color: var(--white-color);
       }
       }
     }

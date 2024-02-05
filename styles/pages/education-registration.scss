@@ -7,7 +7,7 @@
 
   & > .login-box {
     width: 40%;
-    background-color: $white-color;
+    background-color: var(--white-color);
     margin: 1rem 0;
 
     .contact-form {
@@ -21,7 +21,7 @@
 }
 
 .education-profile {
-  background-color: $white-color;
+  background-color: var(--white-color);
   padding: 1rem;
   margin: 1rem 0;
   & > .education-profile-header {
@@ -37,14 +37,14 @@
       border-radius: 50%;
     }
     & > .profile-role {
-      color: $light-color;
+      color: var(--light-color);
     }
   }
   & > .education-profile-body {
     display: flex;
     justify-content: space-between;
     & > .profile-card {
-      background-color: $light-bg;
+      background-color: var(--light-bg);
       width: 32.5%;
       border-radius: 1rem;
       padding: 1rem;
@@ -56,13 +56,13 @@
 
         & > .profile-info-short {
           & > .profile-info-title {
-            color: $main-color;
+            color: var(--main-color);
           }
         }
 
         & > .profile-info-icon {
-          background-color: $dark-color;
-          color: $white-color;
+          background-color: var(--dark-color);
+          color: var(--white-color);
           padding: 0.5rem 1rem;
           border-radius: 0.4rem;
           font-size: 1.4rem;
@@ -80,10 +80,10 @@
       border-radius: .3rem;
 
       & > .profile-info-text{
-        color: $light-color;
+        color: var(--light-color);
 
         & > .profile-info-title{
-          color: $main-color;
+          color: var(--main-color);
           font-weight: bolder;
         }
       }

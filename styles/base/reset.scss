@@ -11,8 +11,8 @@
 }
 
 ::selection {
-  background-color: $main-color;
-  color: $white-color;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
 ::-webkit-scrollbar {
   height: 0.5rem;
@@ -22,16 +22,16 @@
   background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $main-color;
+  background-color: var(--main-color);
 }
 
 ::placeholder{
-  color: $light-color;
+  color: var(--light-color);
 }
 
 .buton {
-  background-color: $main-color;
-  color: $white-color;
+  background-color: var(--main-color);
+  color: var(--white-color);
   font-size: 1rem;
   padding: 0.5rem 2rem;
   border-radius: 0.3rem;
@@ -41,31 +41,31 @@
   display: inline-block;
 
   &:hover {
-    background-color: $dark-color !important;
-    color: $white-color !important;
+    background-color: var(--dark-color) !important;
+    color: var(--white-color) !important;
   }
 }
 
 .education-badge {
-  background-color: $light-bg;
-  color: $light-color;
+  background-color: var(--light-bg);
+  color: var(--light-color);
   display: inline-block;
   padding: 0.3rem 0.7rem;
   border-radius: 0.2rem;
   margin: .7rem 0;
 
   & > .badge-icon {
-    color: $dark-color;
+    color: var(--dark-color);
     font-size: large;
     margin-right: .4rem;
     font-weight: bolder;    
   }
   &:hover {
-    background-color: $dark-color;
-    color: $white-color;
+    background-color: var(--dark-color);
+    color: var(--white-color);
 
     & > .badge-icon{
-      color: $white-color;
+      color: var(--white-color);
     }
   }
 }
@@ -81,7 +81,7 @@
   & > .user-content {
     margin: 0 1rem;
     & > .title {
-      color: $dark-color;
+      color: var(--dark-color);
     }
 
     & > .sub {
@@ -91,21 +91,21 @@
 }
 
 .buton-orange {
-  background-color: $orange-color;
-  color: $white-color;
+  background-color: var(--orange-color);
+  color: var(--white-color);
 }
 
 .buton-danger {
-  background-color: $danger-color;
-  color: $white-color;
+  background-color: var(--danger-color);
+  color: var(--white-color);
 }
 
 .text-orange {
-  color: $orange-color;
+  color: var(--orange-color);
 }
 
 .text-muted {
-  color: $light-color;
+  color: var(--light-color);
 }
 
 .text-center {

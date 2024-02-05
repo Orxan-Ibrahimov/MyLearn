@@ -10,24 +10,25 @@ export class HeaderComponent {
   data!: boolean;
   @Input()
   colorData!: boolean;
-  @Output() dataFormHeader: EventEmitter<{isDark:boolean, isHidden:boolean}> = new EventEmitter<{isDark:boolean, isHidden:boolean}>();
+  @Output() dataFormHeader: EventEmitter<{    
+    isHidden: boolean;
+  }> = new EventEmitter<{ isHidden: boolean }>();
   isHidden = true;
 
-  HideProfile(){
+  HideProfile() {
     this.isHidden = !this.isHidden;
-console.log(this.isHidden);
-
   }
   HideMenu() {
     this.data = !this.data;
     this.SendData();
   }
-  MakeDark(){
+  MakeDark() {
     this.colorData = !this.colorData;
+    document.documentElement.setAttribute("data-theme",this.colorData?"dark":"light");
     this.SendData();
   }
 
-  SendData(){
-    this.dataFormHeader.emit({isDark:this.colorData,isHidden:this.data});
+  SendData() {
+    this.dataFormHeader.emit({isHidden: this.data });
   }
 }
