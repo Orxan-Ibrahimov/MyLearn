@@ -1,6 +1,8 @@
 .search-box {  
   position: relative;
   .search {
+    background-color: var(--white-color);
+    color: var(--dark-color);
     width: 100%;
     padding: 1rem;
     border-radius: .5rem;
@@ -14,6 +16,7 @@
     transform: translateY(-50%);
     cursor: pointer;
     padding: .5rem;
+    color: var(--dark-color);
   }
 }
 
