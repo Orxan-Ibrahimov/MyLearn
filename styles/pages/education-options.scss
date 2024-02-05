@@ -1,24 +1,24 @@
 .education-container {
-   > .headline {
+  > .headline {
     text-transform: capitalize;
     color: var(--dark-color);
     padding: 1rem 0;
     border-bottom: 1px solid var(--dark-color);
   }
 
-   > .cards {
+  > .cards {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 2rem 0;
+
     & > .card {
-      width: 24%;
+      width: 100%;
       background-color: var(--white-color);
       padding: 1rem;
       border-radius: 0.4rem;
       height: fit-content;
-      margin: 0 auto;
-      
+      margin: 1rem;
 
       & > .card-body {
         margin: 1rem 0;
@@ -53,5 +53,78 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .education-container {
+    & > .cards {
+      justify-content: center;
+      & > .card {
+        width: 45%;
+      }     
+
+      .card-profile {
+        width: 45%;
+      }
+
+      .education-left{
+        width: 50%;
+      }
+    }
+  }  
+}
+
+@media only screen and (min-width: 992px) {
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  .education-container {
+    & > .cards {
+      justify-content: space-between;
+      & > .card {
+        width: 32%;
+        margin: 1rem 0;        
+      }
+
+      .card-profile {
+        width: 30%;
+      }
+
+      .card-teacher{
+        width: 32% !important;
+      }
+    }
+  } 
+}
+
+@media only screen and (min-width: 1400px) {
+  .education-container {
+    & > .cards {    
+      & > .card {
+        width: 24%;
+      }      
+    }
+  }
+}
+
+
+
+
+// okay
+
+
+
+@media only screen and (min-width: 1200px) {
+  
+  .card-profile {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .card-profile {
+    width: 350px;
   }
 }

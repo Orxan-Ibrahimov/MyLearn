@@ -1,5 +1,5 @@
 .card-profile {
-  width: 32.5%;
+  width: 100%;
   background-color: var(--white-color);
   padding: 1rem;
   border-radius: 0.4rem;
@@ -164,32 +164,4 @@
   padding: 1rem;
   border-radius: 0.4rem;
   border: 1px solid var(--light-color);
-}
-
-@media only screen and (min-width: 768px) {
-  .card {
-    width: 300px;
-  }
-  .card-profile {
-    width: 250px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .card {
-    width: 350px;
-  }
-  .card-profile {
-    width: 300px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .card {
-    width: 375px;
-  }
-
-  .card-profile {
-    width: 350px;
-  }
 }
