@@ -56,27 +56,43 @@
   }
 }
 
+@media only screen and (min-width: 576px) {
+  .education-container {
+    .card-address {
+      width: 45%;
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   .education-container {
     & > .cards {
       justify-content: center;
       & > .card {
         width: 45%;
-      }     
+      }
 
       .card-profile {
         width: 45%;
       }
-
-      .education-left{
-        width: 50%;
-      }
     }
-  }  
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  
+  .education-container {
+    .education-left {
+      width: 50% !important;
+    }
+
+    .education-right {
+      width: 50% !important;
+      float: right;
+    }
+
+    .card-address {
+      width: 30%;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -85,46 +101,26 @@
       justify-content: space-between;
       & > .card {
         width: 32%;
-        margin: 1rem 0;        
+        margin: 1rem 0;
       }
 
       .card-profile {
         width: 30%;
       }
 
-      .card-teacher{
+      .card-teacher {
         width: 32% !important;
       }
     }
-  } 
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .education-container {
-    & > .cards {    
+    & > .cards {
       & > .card {
         width: 24%;
-      }      
+      }
     }
-  }
-}
-
-
-
-
-// okay
-
-
-
-@media only screen and (min-width: 1200px) {
-  
-  .card-profile {
-    width: 300px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .card-profile {
-    width: 350px;
   }
 }
