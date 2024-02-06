@@ -1,6 +1,7 @@
 .education-container {
   // display: flex;
-  // justify-content: space-between;
+  // flex-wrap: wrap;
+  margin-bottom: 5rem;
 
   & > .education-left {
     display: inline-block;
@@ -14,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    // float: right;
+    text-align: center;
 
     & > .about-title {
       color: var(--dark-color);
@@ -25,28 +26,21 @@
       margin: 1rem 0;
       color: var(--light-color);
     }
-
-    & > .buton {
-      width: fit-content;
-    }
   }
 }
 .mini-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   & > .mini-card {
     display: flex;
-    align-items: center;
+    align-items: center;   
     background-color: var(--white-color);
-    width: 25%;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.4rem;
-    margin: 0 1rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
+    margin: 1rem 0;    
 
     &:last-of-type {
       margin-right: 0;
@@ -63,13 +57,10 @@
   }
 }
 .card-review {
-  width: 30% !important;
+  width: 30%;
   padding: 0 1rem !important;
-  margin: .5rem auto !important;
-  
-  &:nth-of-type(1),&:nth-of-type(4){
-    margin-left: 0 !important;
-  }
+  margin: 0.5rem auto !important;
+ 
   & > .card-footer {
     padding-bottom: 1rem;
   }

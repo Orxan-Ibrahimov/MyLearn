@@ -6,6 +6,7 @@
     background-color: var(--white-color);
     padding: 1rem;
     margin: 3rem 0;
+    text-align: center;
 
     .contact-input-data {
       color: var(--light-color);
@@ -19,9 +20,9 @@
     }
 
     .buton {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      // position: relative;
+      // left: 50%;
+      // transform: translateX(-50%);
       margin: 0.5rem 0;
     }
 }

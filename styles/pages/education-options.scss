@@ -62,6 +62,10 @@
       width: 45%;
     }
   }
+
+  .mini-card {
+    width: 45% !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .education-container {
@@ -76,23 +80,41 @@
       }
     }
   }
+
+  
 }
 
 @media only screen and (min-width: 992px) {
   .education-container {
+    margin: 0 !important;
+    position: relative;
     .education-left {
       width: 50% !important;
     }
 
     .education-right {
       width: 50% !important;
-      float: right;
+      float: right;     
+      text-align: left !important;
+
+      & > .buton {
+        width: fit-content;
+      }
     }
+
+    #about{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }  
 
     .card-address {
       width: 30%;
     }
   }
+
+ 
 }
 
 @media only screen and (min-width: 1200px) {
@@ -112,6 +134,10 @@
         width: 32% !important;
       }
     }
+  }
+
+  .mini-card {
+    width: 24% !important;
   }
 }
 
