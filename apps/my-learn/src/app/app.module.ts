@@ -23,6 +23,7 @@ import { OnlineEducationPlaylistDetailComponent } from './pages/courses/course-p
 import { CoursePlaylistVideosComponent } from './pages/courses/course-playlist-videos/course-playlist-videos.component';
 import { CoursePlaylistVideoItemComponent } from './pages/courses/course-playlist-videos/course-playlist-video-item/course-playlist-video-item.component';
 import { OnlineEducationVideoDetailComponent } from './pages/courses/course-playlist-videos/online-education-video-detail/online-education-video-detail.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const Routes: Route[] = [
   { path: '', component: OnlineEducationHomeComponent },
@@ -35,6 +36,8 @@ const Routes: Route[] = [
   { path: 'profile', component: OnlineEducationProfileComponent },
   { path: 'playlist', component: OnlineEducationPlaylistDetailComponent },
   { path: 'detail', component: OnlineEducationVideoDetailComponent },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
@@ -59,7 +62,8 @@ const Routes: Route[] = [
     OnlineEducationPlaylistDetailComponent,
     CoursePlaylistVideosComponent,
     CoursePlaylistVideoItemComponent,
-    OnlineEducationVideoDetailComponent
+    OnlineEducationVideoDetailComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(Routes)],
   providers: [],

@@ -1,0 +1,32 @@
+.not-found {
+    font-family: 'Comic Sans MS';
+  & > .not-found-bg {
+    height: 400px;
+    background-image: url(../../apps/my-learn/src/assets/images/not-found.gif);
+    background-position: center;
+    position: relative;
+
+    & > .not-found-404-status {
+      font-size: 6rem;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  & > .not-found-content {
+    text-align: center;
+    & > .not-found-404-title {
+      font-size: 3rem;
+    }
+
+    & > .not-found-404-text{
+        letter-spacing: 2px;
+        margin: .5rem 0;
+    }
+
+    
+  }
+}
